@@ -25,9 +25,6 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Text Column */}
             <div>
-              <div className="inline-block bg-amber-50 border-2 border-amber-200 rounded-full px-6 py-2 mb-6">
-                <p className="text-amber-900 font-semibold">A Two-Century Legacy</p>
-              </div>
               <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-8">
                 Preserving Excellence Since 1868
               </h2>

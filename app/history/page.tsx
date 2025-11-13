@@ -18,9 +18,7 @@ export default function HistoryPage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-block bg-amber-50 border-2 border-amber-200 rounded-full px-8 py-3 mb-8">
-              <p className="text-amber-900 font-semibold text-lg">A Single Line of Historical Continuity</p>
-            </div>
+            
             <p className="text-xl text-slate-700 leading-relaxed max-w-4xl mx-auto mb-6">
               The Leonardo Da Vinci Medal and the Prix Poncelet are not separate awards, but rather two chapters 
               of the same story—a nearly two-century tradition of recognizing mathematical excellence applied to 

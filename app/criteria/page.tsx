@@ -18,9 +18,7 @@ export default function CriteriaPage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
-            <div className="inline-block bg-amber-50 border-2 border-amber-200 rounded-full px-8 py-3 mb-8">
-              <p className="text-amber-900 font-semibold text-lg">The Spirit of Leonardo</p>
-            </div>
+            
             <p className="text-xl text-slate-700 leading-relaxed max-w-4xl mx-auto">
               The Leonardo Da Vinci Medal honors individuals whose work exemplifies the Renaissance ideal: 
               the seamless integration of rigorous mathematical thinking with innovative engineering practice, 

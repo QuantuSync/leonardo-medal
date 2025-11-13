@@ -146,9 +146,7 @@ export default function LaureatesPage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-block bg-amber-50 border-2 border-amber-200 rounded-full px-8 py-3 mb-6">
-              <p className="text-amber-900 font-semibold text-lg">Next Award Ceremony</p>
-            </div>
+            
             <p className="text-lg text-slate-600">
               February 15th · In commemoration of Galileo Galilei's birth
             </p>

@@ -108,9 +108,7 @@ export default function IdeaLeaguePage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-block bg-blue-50 border-2 border-blue-200 rounded-full px-8 py-3 mb-8">
-              <p className="text-blue-900 font-semibold text-lg">Five Leading European Technical Universities</p>
-            </div>
+            
             <p className="text-xl text-slate-700 leading-relaxed mb-6 max-w-4xl mx-auto">
               The IDEA League is a strategic alliance of five of Europe's leading universities of science 
               and technology, formed to promote collaboration in education, research, and innovation.
