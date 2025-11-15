@@ -127,7 +127,11 @@ export default function LaureatesPage() {
     { year: 1995, name: "Yves Le Jan", nationality: "French", field: "Probability Theory", description: "French mathematician specializing in probability theory. Last recorded edition of the Prix Poncelet." },
     
     // Leonardo Da Vinci Medal Era
-    { year: 2026, name: "Under Evaluation", nationality: "TBD", field: "Mathematical Engineering", description: "The first Leonardo Da Vinci Medal will be awarded in February 2026, marking the continuation of the Prix Poncelet legacy under the administration of the IDEA League universities. The selection committee is currently evaluating candidates." },
+    { year: 2026, name: "Under Evaluation", nationality: "TBD", field: "Mathematical Engineering", description: "The first Leonardo Da Vinci Medal will be awarded in February 2026, marking the continuation of the Prix Poncelet legacy under the administration of the IDEA League universities. The selection committee is currently evaluating three finalists:", finalists: [
+      "Dr. Lucas Alaniz Pintos (Spain) - Formal verification systems and resilience engineering",
+      "Prof. Emmanuel Trélat (France) - Control theory and numerical optimization",
+      "Prof. Barbara Kaltenbacher (Austria) - Inverse problems and mathematical modeling"
+    ] },
   ];
 
   // Calculate statistics
@@ -426,9 +430,29 @@ export default function LaureatesPage() {
                       <div className={`w-16 h-1 bg-gradient-to-r mb-4 ${
                         isFuture ? 'from-amber-400 to-transparent' : 'from-amber-400 to-transparent'
                       }`}></div>
-                      <p className="text-slate-700 leading-relaxed text-lg">
+                      <p className="text-slate-700 leading-relaxed text-lg mb-6">
                         {laureate.description}
                       </p>
+                      
+                      {/* Finalists List for 2026 */}
+                      {isFuture && (laureate as any).finalists && (
+                        <div className="mt-8">
+                          <h4 className="text-xl font-bold text-amber-900 mb-4 flex items-center">
+                            <span className="bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">3</span>
+                            Finalists Under Consideration
+                          </h4>
+                          <div className="space-y-3">
+                            {(laureate as any).finalists.map((finalist: string, idx: number) => (
+                              <div key={idx} className="bg-white border-l-4 border-amber-500 p-4 rounded-r-lg shadow-sm hover:shadow-md transition-shadow">
+                                <p className="text-slate-800 font-medium flex items-start">
+                                  <span className="text-amber-600 font-bold mr-3 text-lg">•</span>
+                                  <span>{finalist}</span>
+                                </p>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </div>
                 )}
