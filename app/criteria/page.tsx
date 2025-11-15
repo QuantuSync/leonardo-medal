@@ -28,7 +28,7 @@ export default function CriteriaPage() {
         </div>
       </section>
 
-      {/* Core Criteria - Enhanced Design */}
+      {/* Core Criteria - DRAMATIC REDESIGN */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -40,142 +40,178 @@ export default function CriteriaPage() {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-            {/* Criterion 1 */}
-            <div className="group relative bg-white rounded-2xl shadow-lg border-2 border-slate-100 p-10 hover:border-amber-400 hover:shadow-2xl transition-all duration-300">
-              <div className="absolute -top-6 -left-6 bg-gradient-to-br from-amber-400 to-amber-600 rounded-2xl p-6 shadow-lg">
-                <span className="text-4xl text-white font-serif">∫</span>
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
+            {/* Criterion 1 - Mathematical Excellence */}
+            <div className="group relative bg-white rounded-3xl shadow-xl border-2 border-slate-200 p-12 hover:border-amber-400 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+              {/* Icon with dramatic glow */}
+              <div className="text-center mb-8">
+                <div className="relative inline-block">
+                  {/* Glow effect */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full blur-2xl opacity-40 group-hover:opacity-60 transition-opacity"></div>
+                  {/* Icon container */}
+                  <div className="relative bg-gradient-to-br from-amber-400 to-amber-600 rounded-full w-32 h-32 flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
+                    <span className="text-7xl text-white font-serif">∫</span>
+                  </div>
+                </div>
               </div>
-              <div className="mt-6">
-                <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">
+              
+              <div className="text-center">
+                <h3 className="text-3xl font-serif font-bold text-slate-900 mb-6">
                   Mathematical Excellence
                 </h3>
-                <div className="w-16 h-1 bg-amber-400 mb-6"></div>
-                <p className="text-slate-600 leading-relaxed mb-6">
+                <div className="w-24 h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto mb-8"></div>
+                <p className="text-slate-600 leading-relaxed text-lg mb-8">
                   Outstanding application of mathematical theory to solve real-world engineering challenges. 
                   The work must demonstrate:
                 </p>
-                <ul className="space-y-3">
+                <ul className="space-y-4 text-left">
                   <li className="flex items-start">
-                    <span className="text-amber-500 mr-3 mt-1 text-xl">●</span>
-                    <span className="text-slate-700">Deep understanding of mathematical principles</span>
+                    <span className="text-amber-500 mr-4 mt-1 text-2xl flex-shrink-0">●</span>
+                    <span className="text-slate-700 text-lg">Deep understanding of mathematical principles</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-amber-500 mr-3 mt-1 text-xl">●</span>
-                    <span className="text-slate-700">Rigorous analytical methods</span>
+                    <span className="text-amber-500 mr-4 mt-1 text-2xl flex-shrink-0">●</span>
+                    <span className="text-slate-700 text-lg">Rigorous analytical methods</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-amber-500 mr-3 mt-1 text-xl">●</span>
-                    <span className="text-slate-700">Novel mathematical approaches to engineering problems</span>
+                    <span className="text-amber-500 mr-4 mt-1 text-2xl flex-shrink-0">●</span>
+                    <span className="text-slate-700 text-lg">Novel mathematical approaches to engineering problems</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-amber-500 mr-3 mt-1 text-xl">●</span>
-                    <span className="text-slate-700">Development of new mathematical tools or methods</span>
+                    <span className="text-amber-500 mr-4 mt-1 text-2xl flex-shrink-0">●</span>
+                    <span className="text-slate-700 text-lg">Development of new mathematical tools or methods</span>
                   </li>
                 </ul>
               </div>
             </div>
 
-            {/* Criterion 2 */}
-            <div className="group relative bg-white rounded-2xl shadow-lg border-2 border-slate-100 p-10 hover:border-blue-400 hover:shadow-2xl transition-all duration-300">
-              <div className="absolute -top-6 -left-6 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl p-6 shadow-lg">
-                <span className="text-4xl text-white">⚙</span>
+            {/* Criterion 2 - Creative Engineering */}
+            <div className="group relative bg-white rounded-3xl shadow-xl border-2 border-slate-200 p-12 hover:border-blue-400 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+              {/* Icon with dramatic glow */}
+              <div className="text-center mb-8">
+                <div className="relative inline-block">
+                  {/* Glow effect */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full blur-2xl opacity-40 group-hover:opacity-60 transition-opacity"></div>
+                  {/* Icon container */}
+                  <div className="relative bg-gradient-to-br from-blue-500 to-blue-700 rounded-full w-32 h-32 flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
+                    <span className="text-7xl text-white">⚙</span>
+                  </div>
+                </div>
               </div>
-              <div className="mt-6">
-                <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">
+              
+              <div className="text-center">
+                <h3 className="text-3xl font-serif font-bold text-slate-900 mb-6">
                   Creative Engineering
                 </h3>
-                <div className="w-16 h-1 bg-blue-400 mb-6"></div>
-                <p className="text-slate-600 leading-relaxed mb-6">
+                <div className="w-24 h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent mx-auto mb-8"></div>
+                <p className="text-slate-600 leading-relaxed text-lg mb-8">
                   Innovative solutions that demonstrate exceptional technical ingenuity and originality. 
                   The work should exhibit:
                 </p>
-                <ul className="space-y-3">
+                <ul className="space-y-4 text-left">
                   <li className="flex items-start">
-                    <span className="text-blue-500 mr-3 mt-1 text-xl">●</span>
-                    <span className="text-slate-700">Inventive problem-solving approaches</span>
+                    <span className="text-blue-500 mr-4 mt-1 text-2xl flex-shrink-0">●</span>
+                    <span className="text-slate-700 text-lg">Inventive problem-solving approaches</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-blue-500 mr-3 mt-1 text-xl">●</span>
-                    <span className="text-slate-700">Fresh perspectives on technical challenges</span>
+                    <span className="text-blue-500 mr-4 mt-1 text-2xl flex-shrink-0">●</span>
+                    <span className="text-slate-700 text-lg">Fresh perspectives on technical challenges</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-blue-500 mr-3 mt-1 text-xl">●</span>
-                    <span className="text-slate-700">Elegant and practical engineering solutions</span>
+                    <span className="text-blue-500 mr-4 mt-1 text-2xl flex-shrink-0">●</span>
+                    <span className="text-slate-700 text-lg">Elegant and practical engineering solutions</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-blue-500 mr-3 mt-1 text-xl">●</span>
-                    <span className="text-slate-700">Breakthrough thinking in design or implementation</span>
+                    <span className="text-blue-500 mr-4 mt-1 text-2xl flex-shrink-0">●</span>
+                    <span className="text-slate-700 text-lg">Breakthrough thinking in design or implementation</span>
                   </li>
                 </ul>
               </div>
             </div>
 
-            {/* Criterion 3 */}
-            <div className="group relative bg-white rounded-2xl shadow-lg border-2 border-slate-100 p-10 hover:border-green-400 hover:shadow-2xl transition-all duration-300">
-              <div className="absolute -top-6 -left-6 bg-gradient-to-br from-green-500 to-green-700 rounded-2xl p-6 shadow-lg">
-                <span className="text-4xl text-white">✦</span>
+            {/* Criterion 3 - Technical Impact */}
+            <div className="group relative bg-white rounded-3xl shadow-xl border-2 border-slate-200 p-12 hover:border-green-400 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+              {/* Icon with dramatic glow */}
+              <div className="text-center mb-8">
+                <div className="relative inline-block">
+                  {/* Glow effect */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-700 rounded-full blur-2xl opacity-40 group-hover:opacity-60 transition-opacity"></div>
+                  {/* Icon container */}
+                  <div className="relative bg-gradient-to-br from-green-500 to-green-700 rounded-full w-32 h-32 flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
+                    <span className="text-7xl text-white">✦</span>
+                  </div>
+                </div>
               </div>
-              <div className="mt-6">
-                <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">
+              
+              <div className="text-center">
+                <h3 className="text-3xl font-serif font-bold text-slate-900 mb-6">
                   Technical Impact
                 </h3>
-                <div className="w-16 h-1 bg-green-400 mb-6"></div>
-                <p className="text-slate-600 leading-relaxed mb-6">
+                <div className="w-24 h-1 bg-gradient-to-r from-transparent via-green-400 to-transparent mx-auto mb-8"></div>
+                <p className="text-slate-600 leading-relaxed text-lg mb-8">
                   Work that advances the field and creates lasting value for engineering practice. 
                   Impact is demonstrated through:
                 </p>
-                <ul className="space-y-3">
+                <ul className="space-y-4 text-left">
                   <li className="flex items-start">
-                    <span className="text-green-500 mr-3 mt-1 text-xl">●</span>
-                    <span className="text-slate-700">Contributions that advance engineering knowledge</span>
+                    <span className="text-green-500 mr-4 mt-1 text-2xl flex-shrink-0">●</span>
+                    <span className="text-slate-700 text-lg">Contributions that advance engineering knowledge</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-green-500 mr-3 mt-1 text-xl">●</span>
-                    <span className="text-slate-700">Practical applications with real-world significance</span>
+                    <span className="text-green-500 mr-4 mt-1 text-2xl flex-shrink-0">●</span>
+                    <span className="text-slate-700 text-lg">Practical applications with real-world significance</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-green-500 mr-3 mt-1 text-xl">●</span>
-                    <span className="text-slate-700">Influence on industry practices or standards</span>
+                    <span className="text-green-500 mr-4 mt-1 text-2xl flex-shrink-0">●</span>
+                    <span className="text-slate-700 text-lg">Influence on industry practices or standards</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-green-500 mr-3 mt-1 text-xl">●</span>
-                    <span className="text-slate-700">Long-term relevance and sustainability</span>
+                    <span className="text-green-500 mr-4 mt-1 text-2xl flex-shrink-0">●</span>
+                    <span className="text-slate-700 text-lg">Long-term relevance and sustainability</span>
                   </li>
                 </ul>
               </div>
             </div>
 
-            {/* Criterion 4 */}
-            <div className="group relative bg-white rounded-2xl shadow-lg border-2 border-slate-100 p-10 hover:border-purple-400 hover:shadow-2xl transition-all duration-300">
-              <div className="absolute -top-6 -left-6 bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl p-6 shadow-lg">
-                <span className="text-4xl text-white">◈</span>
+            {/* Criterion 4 - Interdisciplinary Thinking */}
+            <div className="group relative bg-white rounded-3xl shadow-xl border-2 border-slate-200 p-12 hover:border-purple-400 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+              {/* Icon with dramatic glow */}
+              <div className="text-center mb-8">
+                <div className="relative inline-block">
+                  {/* Glow effect */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-700 rounded-full blur-2xl opacity-40 group-hover:opacity-60 transition-opacity"></div>
+                  {/* Icon container */}
+                  <div className="relative bg-gradient-to-br from-purple-500 to-purple-700 rounded-full w-32 h-32 flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
+                    <span className="text-7xl text-white">◈</span>
+                  </div>
+                </div>
               </div>
-              <div className="mt-6">
-                <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">
+              
+              <div className="text-center">
+                <h3 className="text-3xl font-serif font-bold text-slate-900 mb-6">
                   Interdisciplinary Thinking
                 </h3>
-                <div className="w-16 h-1 bg-purple-400 mb-6"></div>
-                <p className="text-slate-600 leading-relaxed mb-6">
+                <div className="w-24 h-1 bg-gradient-to-r from-transparent via-purple-400 to-transparent mx-auto mb-8"></div>
+                <p className="text-slate-600 leading-relaxed text-lg mb-8">
                   The ability to bridge multiple domains and integrate diverse perspectives. 
                   This includes:
                 </p>
-                <ul className="space-y-3">
+                <ul className="space-y-4 text-left">
                   <li className="flex items-start">
-                    <span className="text-purple-500 mr-3 mt-1 text-xl">●</span>
-                    <span className="text-slate-700">Synthesis of knowledge from multiple fields</span>
+                    <span className="text-purple-500 mr-4 mt-1 text-2xl flex-shrink-0">●</span>
+                    <span className="text-slate-700 text-lg">Synthesis of knowledge from multiple fields</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-purple-500 mr-3 mt-1 text-xl">●</span>
-                    <span className="text-slate-700">Cross-disciplinary collaboration and integration</span>
+                    <span className="text-purple-500 mr-4 mt-1 text-2xl flex-shrink-0">●</span>
+                    <span className="text-slate-700 text-lg">Cross-disciplinary collaboration and integration</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-purple-500 mr-3 mt-1 text-xl">●</span>
-                    <span className="text-slate-700">Holistic approaches to complex problems</span>
+                    <span className="text-purple-500 mr-4 mt-1 text-2xl flex-shrink-0">●</span>
+                    <span className="text-slate-700 text-lg">Holistic approaches to complex problems</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-purple-500 mr-3 mt-1 text-xl">●</span>
-                    <span className="text-slate-700">Connections between theory and practice</span>
+                    <span className="text-purple-500 mr-4 mt-1 text-2xl flex-shrink-0">●</span>
+                    <span className="text-slate-700 text-lg">Connections between theory and practice</span>
                   </li>
                 </ul>
               </div>
@@ -184,7 +220,7 @@ export default function CriteriaPage() {
         </div>
       </section>
 
-      {/* Evaluation Philosophy */}
+      {/* Evaluation Philosophy - REDESIGNED */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -197,7 +233,7 @@ export default function CriteriaPage() {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gradient-to-br from-amber-50 to-white border-l-4 border-amber-500 p-8 rounded-r-xl shadow-sm">
+            <div className="bg-white border-l-4 border-amber-500 p-8 rounded-r-xl shadow-md hover:shadow-lg transition-shadow">
               <h3 className="text-2xl font-semibold text-slate-900 mb-4 flex items-center">
                 <span className="text-amber-600 mr-3 text-3xl">◆</span>
                 Quality Over Quantity
@@ -209,7 +245,7 @@ export default function CriteriaPage() {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-50 to-white border-l-4 border-blue-500 p-8 rounded-r-xl shadow-sm">
+            <div className="bg-white border-l-4 border-blue-500 p-8 rounded-r-xl shadow-md hover:shadow-lg transition-shadow">
               <h3 className="text-2xl font-semibold text-slate-900 mb-4 flex items-center">
                 <span className="text-blue-600 mr-3 text-3xl">◆</span>
                 Timeless Relevance
@@ -222,7 +258,7 @@ export default function CriteriaPage() {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-green-50 to-white border-l-4 border-green-500 p-8 rounded-r-xl shadow-sm">
+            <div className="bg-white border-l-4 border-green-500 p-8 rounded-r-xl shadow-md hover:shadow-lg transition-shadow">
               <h3 className="text-2xl font-semibold text-slate-900 mb-4 flex items-center">
                 <span className="text-green-600 mr-3 text-3xl">◆</span>
                 Mathematical Foundations
@@ -235,7 +271,7 @@ export default function CriteriaPage() {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-purple-50 to-white border-l-4 border-purple-500 p-8 rounded-r-xl shadow-sm">
+            <div className="bg-white border-l-4 border-purple-500 p-8 rounded-r-xl shadow-md hover:shadow-lg transition-shadow">
               <h3 className="text-2xl font-semibold text-slate-900 mb-4 flex items-center">
                 <span className="text-purple-600 mr-3 text-3xl">◆</span>
                 European Academic Values
@@ -251,7 +287,7 @@ export default function CriteriaPage() {
         </div>
       </section>
 
-      {/* Selection Process */}
+      {/* Selection Process - DRAMATIC REDESIGN */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
@@ -263,34 +299,73 @@ export default function CriteriaPage() {
             </p>
           </div>
           
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 p-10 md:p-14">
+          <div className="bg-white rounded-2xl shadow-xl border-2 border-slate-200 p-10 md:p-14">
             <div className="space-y-8 text-slate-700 text-lg leading-relaxed">
               <p>
                 The Leonardo Da Vinci Medal is administered collectively by the five universities of the 
                 IDEA League, ensuring academic rigor and institutional balance.
               </p>
               
+              {/* Three Steps - ELEGANT MEDALLION DESIGN */}
               <div className="grid md:grid-cols-3 gap-8 my-12">
-                <div className="text-center p-8 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl border-2 border-blue-200">
-                  <div className="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-4 shadow-lg">1</div>
-                  <div className="text-sm font-bold text-blue-900 mb-3 uppercase tracking-wide">Nomination</div>
-                  <p className="text-sm text-slate-700">
-                    Candidates proposed by faculty from member universities
-                  </p>
+                {/* Step 1 - Nomination */}
+                <div className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 rounded-2xl p-8 border-2 border-blue-400 shadow-2xl hover:scale-105 transition-transform duration-300">
+                  {/* Patrón de fondo sutil */}
+                  <div className="absolute inset-0 opacity-5">
+                    <div className="absolute inset-0" style={{
+                      backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+                      backgroundSize: '32px 32px'
+                    }}></div>
+                  </div>
+                  
+                  <div className="relative text-center">
+                    <div className="bg-gradient-to-br from-blue-400 to-blue-600 text-white w-20 h-20 rounded-full flex items-center justify-center text-4xl font-bold mx-auto mb-4 shadow-lg border-4 border-blue-300">1</div>
+                    <div className="w-16 h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent mx-auto mb-4"></div>
+                    <div className="text-sm font-bold text-blue-300 mb-3 uppercase tracking-wide">Nomination</div>
+                    <p className="text-sm text-white leading-relaxed">
+                      Candidates proposed by faculty from member universities
+                    </p>
+                  </div>
                 </div>
-                <div className="text-center p-8 bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl border-2 border-amber-200">
-                  <div className="bg-amber-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-4 shadow-lg">2</div>
-                  <div className="text-sm font-bold text-amber-900 mb-3 uppercase tracking-wide">Evaluation</div>
-                  <p className="text-sm text-slate-700">
-                    Peer review by expert committees from all five universities
-                  </p>
+
+                {/* Step 2 - Evaluation */}
+                <div className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 rounded-2xl p-8 border-2 border-amber-400 shadow-2xl hover:scale-105 transition-transform duration-300">
+                  {/* Patrón de fondo sutil */}
+                  <div className="absolute inset-0 opacity-5">
+                    <div className="absolute inset-0" style={{
+                      backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+                      backgroundSize: '32px 32px'
+                    }}></div>
+                  </div>
+                  
+                  <div className="relative text-center">
+                    <div className="bg-gradient-to-br from-amber-400 to-amber-600 text-blue-950 w-20 h-20 rounded-full flex items-center justify-center text-4xl font-bold mx-auto mb-4 shadow-lg border-4 border-amber-300">2</div>
+                    <div className="w-16 h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto mb-4"></div>
+                    <div className="text-sm font-bold text-amber-300 mb-3 uppercase tracking-wide">Evaluation</div>
+                    <p className="text-sm text-white leading-relaxed">
+                      Peer review by expert committees from all five universities
+                    </p>
+                  </div>
                 </div>
-                <div className="text-center p-8 bg-gradient-to-br from-green-50 to-green-100 rounded-xl border-2 border-green-200">
-                  <div className="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-4 shadow-lg">3</div>
-                  <div className="text-sm font-bold text-green-900 mb-3 uppercase tracking-wide">Selection</div>
-                  <p className="text-sm text-slate-700">
-                    Collective decision through consensus among universities
-                  </p>
+
+                {/* Step 3 - Selection */}
+                <div className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 rounded-2xl p-8 border-2 border-green-400 shadow-2xl hover:scale-105 transition-transform duration-300">
+                  {/* Patrón de fondo sutil */}
+                  <div className="absolute inset-0 opacity-5">
+                    <div className="absolute inset-0" style={{
+                      backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+                      backgroundSize: '32px 32px'
+                    }}></div>
+                  </div>
+                  
+                  <div className="relative text-center">
+                    <div className="bg-gradient-to-br from-green-400 to-green-600 text-white w-20 h-20 rounded-full flex items-center justify-center text-4xl font-bold mx-auto mb-4 shadow-lg border-4 border-green-300">3</div>
+                    <div className="w-16 h-1 bg-gradient-to-r from-transparent via-green-400 to-transparent mx-auto mb-4"></div>
+                    <div className="text-sm font-bold text-green-300 mb-3 uppercase tracking-wide">Selection</div>
+                    <p className="text-sm text-white leading-relaxed">
+                      Collective decision through consensus among universities
+                    </p>
+                  </div>
                 </div>
               </div>
 
@@ -300,12 +375,24 @@ export default function CriteriaPage() {
                 ensures equal representation and maintains the Medal's pan-European character.
               </p>
 
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 border-2 border-blue-300 rounded-xl p-8 mt-10">
-                <p className="text-blue-900 italic text-center text-lg font-medium">
-                  "The selection process prioritizes scholarly consensus over individual preferences, 
-                  ensuring that every laureate represents a shared commitment to excellence across 
-                  Europe's leading technical universities."
-                </p>
+              <div className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 rounded-2xl p-10 mt-10 border-2 border-amber-400 shadow-2xl">
+                {/* Patrón de fondo sutil */}
+                <div className="absolute inset-0 opacity-5">
+                  <div className="absolute inset-0" style={{
+                    backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+                    backgroundSize: '32px 32px'
+                  }}></div>
+                </div>
+                
+                <div className="relative">
+                  <div className="w-24 h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto mb-6"></div>
+                  <p className="text-white italic text-center text-lg font-medium leading-relaxed">
+                    "The selection process prioritizes scholarly consensus over individual preferences, 
+                    ensuring that every laureate represents a shared commitment to excellence across 
+                    Europe's leading technical universities."
+                  </p>
+                  <div className="w-24 h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto mt-6"></div>
+                </div>
               </div>
             </div>
           </div>

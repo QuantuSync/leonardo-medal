@@ -52,15 +52,24 @@ export default function HistoryPage() {
                 European prize specifically dedicated to rewarding the application of mathematics to engineering.
               </p>
 
-              <div className="bg-gradient-to-br from-amber-50 to-amber-100 border-l-4 border-amber-500 rounded-r-xl p-8 my-8">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-amber-600 text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-2xl font-bold">
+              {/* Named After Box - REDESIGNED */}
+              <div className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 rounded-2xl p-8 my-8 border-2 border-amber-400 shadow-2xl">
+                {/* Patrón de fondo sutil */}
+                <div className="absolute inset-0 opacity-5">
+                  <div className="absolute inset-0" style={{
+                    backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+                    backgroundSize: '32px 32px'
+                  }}></div>
+                </div>
+                
+                <div className="relative flex items-start space-x-4">
+                  <div className="bg-gradient-to-br from-amber-400 to-amber-600 text-blue-950 rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 text-2xl font-bold shadow-lg">
                     P
                   </div>
                   <div>
-                    <p className="font-bold text-amber-900 mb-2 text-xl">Named After:</p>
-                    <p className="text-slate-800">
-                      <span className="font-semibold">Jean-Victor Poncelet (1788-1867)</span>, French mathematician 
+                    <p className="font-bold text-amber-400 mb-2 text-xl">Named After:</p>
+                    <p className="text-white">
+                      <span className="font-semibold text-amber-200">Jean-Victor Poncelet (1788-1867)</span>, French mathematician 
                       and engineer, pioneer of projective geometry and its applications to mechanics and engineering.
                     </p>
                   </div>
@@ -78,25 +87,25 @@ export default function HistoryPage() {
               </p>
 
               <div className="grid md:grid-cols-2 gap-4 my-8">
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 border-l-4 border-blue-600 p-6 rounded-r-xl">
+                <div className="bg-white border-l-4 border-blue-600 p-6 rounded-r-xl shadow-md hover:shadow-lg transition-shadow">
                   <p className="flex items-start text-slate-800">
                     <span className="text-blue-600 font-bold mr-3 text-xl">▸</span>
                     <span>Rigorous application of mathematical principles to engineering problems</span>
                   </p>
                 </div>
-                <div className="bg-gradient-to-br from-green-50 to-green-100 border-l-4 border-green-600 p-6 rounded-r-xl">
+                <div className="bg-white border-l-4 border-green-600 p-6 rounded-r-xl shadow-md hover:shadow-lg transition-shadow">
                   <p className="flex items-start text-slate-800">
                     <span className="text-green-600 font-bold mr-3 text-xl">▸</span>
                     <span>Development of new mathematical methods for technical applications</span>
                   </p>
                 </div>
-                <div className="bg-gradient-to-br from-purple-50 to-purple-100 border-l-4 border-purple-600 p-6 rounded-r-xl">
+                <div className="bg-white border-l-4 border-purple-600 p-6 rounded-r-xl shadow-md hover:shadow-lg transition-shadow">
                   <p className="flex items-start text-slate-800">
                     <span className="text-purple-600 font-bold mr-3 text-xl">▸</span>
                     <span>Advancement of theoretical foundations for engineering practice</span>
                   </p>
                 </div>
-                <div className="bg-gradient-to-br from-amber-50 to-amber-100 border-l-4 border-amber-600 p-6 rounded-r-xl">
+                <div className="bg-white border-l-4 border-amber-600 p-6 rounded-r-xl shadow-md hover:shadow-lg transition-shadow">
                   <p className="flex items-start text-slate-800">
                     <span className="text-amber-600 font-bold mr-3 text-xl">▸</span>
                     <span>Contributions that bridged pure mathematics and applied engineering</span>
@@ -144,28 +153,39 @@ export default function HistoryPage() {
                   and give continuity to the Prix Poncelet tradition.
                 </p>
 
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 border-2 border-blue-300 rounded-2xl p-10 my-10">
-                  <h4 className="font-bold text-blue-900 mb-6 text-2xl text-center">Why This Framework?</h4>
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div className="flex items-start space-x-3">
-                      <span className="text-blue-600 text-2xl flex-shrink-0">✓</span>
-                      <span className="text-blue-900">Provides institutional stability through a permanent university consortium</span>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <span className="text-blue-600 text-2xl flex-shrink-0">✓</span>
-                      <span className="text-blue-900">Ensures regular administration with rotating host universities</span>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <span className="text-blue-600 text-2xl flex-shrink-0">✓</span>
-                      <span className="text-blue-900">Maintains academic rigor through peer review and collective decision-making</span>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <span className="text-blue-600 text-2xl flex-shrink-0">✓</span>
-                      <span className="text-blue-900">Projects European academic values into contemporary engineering education</span>
-                    </div>
-                    <div className="flex items-start space-x-3 md:col-span-2">
-                      <span className="text-blue-600 text-2xl flex-shrink-0">✓</span>
-                      <span className="text-blue-900">Connects historical prestige with modern interdisciplinary approaches</span>
+                {/* Why This Framework Box - REDESIGNED */}
+                <div className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 rounded-2xl p-10 my-10 border-2 border-blue-400 shadow-2xl">
+                  {/* Patrón de fondo sutil */}
+                  <div className="absolute inset-0 opacity-5">
+                    <div className="absolute inset-0" style={{
+                      backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+                      backgroundSize: '32px 32px'
+                    }}></div>
+                  </div>
+                  
+                  <div className="relative">
+                    <h4 className="font-bold text-blue-300 mb-6 text-2xl text-center">Why This Framework?</h4>
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div className="flex items-start space-x-3">
+                        <span className="text-blue-400 text-2xl flex-shrink-0">✓</span>
+                        <span className="text-white">Provides institutional stability through a permanent university consortium</span>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <span className="text-blue-400 text-2xl flex-shrink-0">✓</span>
+                        <span className="text-white">Ensures regular administration with rotating host universities</span>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <span className="text-blue-400 text-2xl flex-shrink-0">✓</span>
+                        <span className="text-white">Maintains academic rigor through peer review and collective decision-making</span>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <span className="text-blue-400 text-2xl flex-shrink-0">✓</span>
+                        <span className="text-white">Projects European academic values into contemporary engineering education</span>
+                      </div>
+                      <div className="flex items-start space-x-3 md:col-span-2">
+                        <span className="text-blue-400 text-2xl flex-shrink-0">✓</span>
+                        <span className="text-white">Connects historical prestige with modern interdisciplinary approaches</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -185,25 +205,25 @@ export default function HistoryPage() {
                 </p>
 
                 <div className="space-y-4 my-8">
-                  <div className="bg-gradient-to-r from-amber-50 to-white border-l-4 border-amber-500 p-6 rounded-r-xl">
+                  <div className="bg-white border-l-4 border-amber-500 p-6 rounded-r-xl shadow-md hover:shadow-lg transition-shadow">
                     <p className="flex items-start">
                       <span className="text-amber-600 font-bold mr-3 text-xl">◆</span>
                       <span className="text-slate-800">The historical prestige of the Prix Poncelet is preserved and honored</span>
                     </p>
                   </div>
-                  <div className="bg-gradient-to-r from-blue-50 to-white border-l-4 border-blue-500 p-6 rounded-r-xl">
+                  <div className="bg-white border-l-4 border-blue-500 p-6 rounded-r-xl shadow-md hover:shadow-lg transition-shadow">
                     <p className="flex items-start">
                       <span className="text-blue-600 font-bold mr-3 text-xl">◆</span>
                       <span className="text-slate-800">The award gains renewed institutional support and visibility</span>
                     </p>
                   </div>
-                  <div className="bg-gradient-to-r from-green-50 to-white border-l-4 border-green-500 p-6 rounded-r-xl">
+                  <div className="bg-white border-l-4 border-green-500 p-6 rounded-r-xl shadow-md hover:shadow-lg transition-shadow">
                     <p className="flex items-start">
                       <span className="text-green-600 font-bold mr-3 text-xl">◆</span>
                       <span className="text-slate-800">Future laureates join a legacy spanning nearly two centuries</span>
                     </p>
                   </div>
-                  <div className="bg-gradient-to-r from-purple-50 to-white border-l-4 border-purple-500 p-6 rounded-r-xl">
+                  <div className="bg-white border-l-4 border-purple-500 p-6 rounded-r-xl shadow-md hover:shadow-lg transition-shadow">
                     <p className="flex items-start">
                       <span className="text-purple-600 font-bold mr-3 text-xl">◆</span>
                       <span className="text-slate-800">European academic values in engineering education are reinforced</span>
@@ -213,13 +233,23 @@ export default function HistoryPage() {
               </div>
             </div>
 
-            {/* Final Statement Box */}
-            <div className="bg-gradient-to-br from-amber-400 via-amber-500 to-amber-600 rounded-2xl shadow-2xl p-12 text-center border-4 border-amber-300">
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8">
+            {/* Final Statement Box - REDESIGNED */}
+            <div className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 rounded-2xl shadow-2xl p-12 text-center border-4 border-amber-400">
+              {/* Patrón de fondo sutil */}
+              <div className="absolute inset-0 opacity-5">
+                <div className="absolute inset-0" style={{
+                  backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+                  backgroundSize: '32px 32px'
+                }}></div>
+              </div>
+              
+              <div className="relative bg-white/10 backdrop-blur-sm rounded-xl p-8 border-2 border-amber-400/30">
+                <div className="w-24 h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto mb-6"></div>
                 <p className="text-3xl md:text-4xl font-serif font-bold text-white mb-6">
                   From 1868 to Today
                 </p>
-                <p className="text-xl text-white leading-relaxed">
+                <div className="w-32 h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto mb-6"></div>
+                <p className="text-xl text-blue-100 leading-relaxed">
                   A single tradition of excellence, linking two centuries of mathematical 
                   and engineering thought under a modern, interdisciplinary, university-based European framework.
                 </p>

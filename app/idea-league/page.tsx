@@ -258,6 +258,41 @@ export default function IdeaLeaguePage() {
             </p>
           </div>
           
+          {/* New Elegant Medallion Card */}
+          <div className="max-w-md mx-auto mb-16">
+            <div className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 rounded-2xl p-12 shadow-2xl border-2 border-amber-400">
+              {/* Patrón de fondo sutil */}
+              <div className="absolute inset-0 opacity-5">
+                <div className="absolute inset-0" style={{
+                  backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+                  backgroundSize: '32px 32px'
+                }}></div>
+              </div>
+              
+              <div className="relative text-center">
+                {/* Número destacado */}
+                <div className="mb-4">
+                  <span className="text-8xl font-serif font-bold bg-gradient-to-br from-amber-300 via-amber-400 to-amber-600 bg-clip-text text-transparent">
+                    95
+                  </span>
+                </div>
+                
+                {/* Línea decorativa */}
+                <div className="w-32 h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto mb-4"></div>
+                
+                {/* Texto principal */}
+                <h3 className="text-2xl font-serif font-semibold text-white mb-2">
+                  Distinguished Laureates
+                </h3>
+                
+                {/* Subtítulo */}
+                <p className="text-blue-200 text-sm uppercase tracking-wider">
+                  Prix Poncelet Recipients
+                </p>
+              </div>
+            </div>
+          </div>
+          
           <div className="bg-white rounded-2xl shadow-xl border-2 border-slate-200 p-10 md:p-14">
             <div className="space-y-8 text-slate-700 text-lg leading-relaxed">
               <p className="text-xl">
@@ -271,31 +306,31 @@ export default function IdeaLeaguePage() {
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 my-10">
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 border-l-4 border-blue-600 p-6 rounded-r-xl">
+                <div className="bg-white border-l-4 border-blue-600 p-6 rounded-r-xl shadow-md hover:shadow-lg transition-shadow">
                   <p className="flex items-start text-slate-800">
                     <span className="text-blue-600 font-bold mr-3 text-2xl">✓</span>
                     <span>Selection decisions reflect a true pan-European academic consensus</span>
                   </p>
                 </div>
-                <div className="bg-gradient-to-br from-amber-50 to-amber-100 border-l-4 border-amber-600 p-6 rounded-r-xl">
+                <div className="bg-white border-l-4 border-amber-600 p-6 rounded-r-xl shadow-md hover:shadow-lg transition-shadow">
                   <p className="flex items-start text-slate-800">
                     <span className="text-amber-600 font-bold mr-3 text-2xl">✓</span>
                     <span>The highest standards of academic rigor are maintained</span>
                   </p>
                 </div>
-                <div className="bg-gradient-to-br from-green-50 to-green-100 border-l-4 border-green-600 p-6 rounded-r-xl">
+                <div className="bg-white border-l-4 border-green-600 p-6 rounded-r-xl shadow-md hover:shadow-lg transition-shadow">
                   <p className="flex items-start text-slate-800">
                     <span className="text-green-600 font-bold mr-3 text-2xl">✓</span>
                     <span>The award benefits from diverse perspectives across institutions and countries</span>
                   </p>
                 </div>
-                <div className="bg-gradient-to-br from-purple-50 to-purple-100 border-l-4 border-purple-600 p-6 rounded-r-xl">
+                <div className="bg-white border-l-4 border-purple-600 p-6 rounded-r-xl shadow-md hover:shadow-lg transition-shadow">
                   <p className="flex items-start text-slate-800">
                     <span className="text-purple-600 font-bold mr-3 text-2xl">✓</span>
                     <span>The historic Prix Poncelet legacy is preserved and projected into the future</span>
                   </p>
                 </div>
-                <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 border-l-4 border-indigo-600 p-6 rounded-r-xl md:col-span-2">
+                <div className="bg-white border-l-4 border-indigo-600 p-6 rounded-r-xl md:col-span-2 shadow-md hover:shadow-lg transition-shadow">
                   <p className="flex items-start text-slate-800">
                     <span className="text-indigo-600 font-bold mr-3 text-2xl">✓</span>
                     <span>European values in technical education are reinforced and promoted</span>
@@ -308,11 +343,23 @@ export default function IdeaLeaguePage() {
                 institution to contribute its unique perspective and traditions to the award ceremony.
               </p>
 
-              <div className="bg-gradient-to-br from-amber-50 to-amber-100 border-2 border-amber-300 rounded-xl p-8 mt-10">
-                <p className="text-amber-900 italic text-center text-xl font-medium">
-                  "Through the Leonardo Da Vinci Medal, the IDEA League honors not just individual achievement, 
-                  but the enduring European tradition of integrating mathematical rigor with engineering practice."
-                </p>
+              <div className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 rounded-2xl p-10 mt-10 border-2 border-amber-400 shadow-2xl">
+                {/* Patrón de fondo sutil */}
+                <div className="absolute inset-0 opacity-5">
+                  <div className="absolute inset-0" style={{
+                    backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+                    backgroundSize: '32px 32px'
+                  }}></div>
+                </div>
+                
+                <div className="relative">
+                  <div className="w-24 h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto mb-6"></div>
+                  <p className="text-white italic text-center text-xl font-medium leading-relaxed">
+                    "Through the Leonardo Da Vinci Medal, the IDEA League honors not just individual achievement, 
+                    but the enduring European tradition of integrating mathematical rigor with engineering practice."
+                  </p>
+                  <div className="w-24 h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto mt-6"></div>
+                </div>
               </div>
             </div>
           </div>

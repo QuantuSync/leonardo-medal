@@ -124,24 +124,107 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section */}
+      {/* Stats Section - ELEGANT MEDALLION DESIGN */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-10 border-2 border-blue-200">
-              <div className="text-6xl font-bold text-blue-900 mb-2">157</div>
-              <div className="text-lg text-blue-700 font-semibold">Years of History</div>
-              <div className="text-sm text-slate-600 mt-2">Since 1868</div>
+            {/* Card 1 - Years of History */}
+            <div className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 rounded-2xl p-10 border-2 border-blue-400 shadow-2xl">
+              {/* Patrón de fondo sutil */}
+              <div className="absolute inset-0 opacity-5">
+                <div className="absolute inset-0" style={{
+                  backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+                  backgroundSize: '32px 32px'
+                }}></div>
+              </div>
+              
+              <div className="relative">
+                {/* Número destacado */}
+                <div className="mb-2">
+                  <span className="text-6xl font-serif font-bold bg-gradient-to-br from-blue-300 via-blue-400 to-blue-500 bg-clip-text text-transparent">
+                    157
+                  </span>
+                </div>
+                
+                {/* Línea decorativa */}
+                <div className="w-24 h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent mx-auto mb-3"></div>
+                
+                {/* Texto principal */}
+                <div className="text-lg text-white font-semibold mb-1">
+                  Years of History
+                </div>
+                
+                {/* Subtítulo */}
+                <div className="text-sm text-blue-200 mt-2">
+                  Since 1868
+                </div>
+              </div>
             </div>
-            <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-2xl p-10 border-2 border-amber-200">
-              <div className="text-6xl font-bold text-amber-900 mb-2">95</div>
-              <div className="text-lg text-amber-700 font-semibold">Distinguished Laureates</div>
-              <div className="text-sm text-slate-600 mt-2">Prix Poncelet Recipients</div>
+
+            {/* Card 2 - Distinguished Laureates */}
+            <div className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 rounded-2xl p-10 border-2 border-amber-400 shadow-2xl">
+              {/* Patrón de fondo sutil */}
+              <div className="absolute inset-0 opacity-5">
+                <div className="absolute inset-0" style={{
+                  backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+                  backgroundSize: '32px 32px'
+                }}></div>
+              </div>
+              
+              <div className="relative">
+                {/* Número destacado */}
+                <div className="mb-2">
+                  <span className="text-6xl font-serif font-bold bg-gradient-to-br from-amber-300 via-amber-400 to-amber-600 bg-clip-text text-transparent">
+                    95
+                  </span>
+                </div>
+                
+                {/* Línea decorativa */}
+                <div className="w-24 h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto mb-3"></div>
+                
+                {/* Texto principal */}
+                <div className="text-lg text-white font-semibold mb-1">
+                  Distinguished Laureates
+                </div>
+                
+                {/* Subtítulo */}
+                <div className="text-sm text-blue-200 mt-2">
+                  Prix Poncelet Recipients
+                </div>
+              </div>
             </div>
-            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-10 border-2 border-green-200">
-              <div className="text-6xl font-bold text-green-900 mb-2">5</div>
-              <div className="text-lg text-green-700 font-semibold">Leading Universities</div>
-              <div className="text-sm text-slate-600 mt-2">IDEA League Members</div>
+
+            {/* Card 3 - Leading Universities */}
+            <div className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 rounded-2xl p-10 border-2 border-green-400 shadow-2xl">
+              {/* Patrón de fondo sutil */}
+              <div className="absolute inset-0 opacity-5">
+                <div className="absolute inset-0" style={{
+                  backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+                  backgroundSize: '32px 32px'
+                }}></div>
+              </div>
+              
+              <div className="relative">
+                {/* Número destacado */}
+                <div className="mb-2">
+                  <span className="text-6xl font-serif font-bold bg-gradient-to-br from-green-300 via-green-400 to-green-500 bg-clip-text text-transparent">
+                    5
+                  </span>
+                </div>
+                
+                {/* Línea decorativa */}
+                <div className="w-24 h-1 bg-gradient-to-r from-transparent via-green-400 to-transparent mx-auto mb-3"></div>
+                
+                {/* Texto principal */}
+                <div className="text-lg text-white font-semibold mb-1">
+                  Leading Universities
+                </div>
+                
+                {/* Subtítulo */}
+                <div className="text-sm text-blue-200 mt-2">
+                  IDEA League Members
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -125,7 +125,16 @@ export default function LaureatesPage() {
     { year: 1990, name: "Jean-Yves Girard", nationality: "French", field: "Mathematical Logic", description: "French mathematical logician." },
     { year: 1993, name: "Marie Farge", nationality: "French", field: "Turbulence", description: "French mathematician and physicist, for her work on the application of wavelet transform to the study of turbulence." },
     { year: 1995, name: "Yves Le Jan", nationality: "French", field: "Probability Theory", description: "French mathematician specializing in probability theory. Last recorded edition of the Prix Poncelet." },
+    
+    // Leonardo Da Vinci Medal Era
+    { year: 2026, name: "Under Evaluation", nationality: "TBD", field: "Mathematical Engineering", description: "The first Leonardo Da Vinci Medal will be awarded in February 2026, marking the continuation of the Prix Poncelet legacy under the administration of the IDEA League universities. The selection committee is currently evaluating candidates." },
   ];
+
+  // Calculate statistics
+  const totalLaureates = laureates.length;
+  const countries = [...new Set(laureates.map(l => l.nationality))].length;
+  const fields = [...new Set(laureates.map(l => l.field))].length;
+  const yearsOfHistory = 2026 - 1868;
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
@@ -135,70 +144,181 @@ export default function LaureatesPage() {
           <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
             Laureates Timeline
           </h1>
-          <div className="w-32 h-1 bg-amber-400 mx-auto mb-4"></div>
-          <p className="text-xl text-blue-100">
+          <div className="w-32 h-1 bg-amber-400 mx-auto mb-6"></div>
+          <p className="text-xl md:text-2xl text-blue-100 font-light">
             Prix Poncelet (1868–1995) → Leonardo Da Vinci Medal (2026–Present)
           </p>
         </div>
       </section>
 
-      {/* Countdown Section */}
+      {/* Stats Section - NEW */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-4 gap-8 text-center">
+            {/* Stat 1 */}
+            <div className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 rounded-2xl p-10 border-2 border-blue-400 shadow-2xl">
+              <div className="absolute inset-0 opacity-5">
+                <div className="absolute inset-0" style={{
+                  backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+                  backgroundSize: '32px 32px'
+                }}></div>
+              </div>
+              <div className="relative">
+                <div className="mb-2">
+                  <span className="text-6xl font-serif font-bold bg-gradient-to-br from-blue-300 via-blue-400 to-blue-500 bg-clip-text text-transparent">
+                    {yearsOfHistory}
+                  </span>
+                </div>
+                <div className="w-24 h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent mx-auto mb-3"></div>
+                <div className="text-lg text-white font-semibold mb-1">
+                  Years of History
+                </div>
+                <div className="text-sm text-blue-200 mt-2">
+                  Since 1868
+                </div>
+              </div>
+            </div>
+
+            {/* Stat 2 */}
+            <div className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 rounded-2xl p-10 border-2 border-amber-400 shadow-2xl">
+              <div className="absolute inset-0 opacity-5">
+                <div className="absolute inset-0" style={{
+                  backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+                  backgroundSize: '32px 32px'
+                }}></div>
+              </div>
+              <div className="relative">
+                <div className="mb-2">
+                  <span className="text-6xl font-serif font-bold bg-gradient-to-br from-amber-300 via-amber-400 to-amber-600 bg-clip-text text-transparent">
+                    {totalLaureates}
+                  </span>
+                </div>
+                <div className="w-24 h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto mb-3"></div>
+                <div className="text-lg text-white font-semibold mb-1">
+                  Distinguished Laureates
+                </div>
+                <div className="text-sm text-blue-200 mt-2">
+                  Prix Poncelet Recipients
+                </div>
+              </div>
+            </div>
+
+            {/* Stat 3 */}
+            <div className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 rounded-2xl p-10 border-2 border-green-400 shadow-2xl">
+              <div className="absolute inset-0 opacity-5">
+                <div className="absolute inset-0" style={{
+                  backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+                  backgroundSize: '32px 32px'
+                }}></div>
+              </div>
+              <div className="relative">
+                <div className="mb-2">
+                  <span className="text-6xl font-serif font-bold bg-gradient-to-br from-green-300 via-green-400 to-green-500 bg-clip-text text-transparent">
+                    {countries}
+                  </span>
+                </div>
+                <div className="w-24 h-1 bg-gradient-to-r from-transparent via-green-400 to-transparent mx-auto mb-3"></div>
+                <div className="text-lg text-white font-semibold mb-1">
+                  Countries
+                </div>
+                <div className="text-sm text-blue-200 mt-2">
+                  Represented
+                </div>
+              </div>
+            </div>
+
+            {/* Stat 4 */}
+            <div className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 rounded-2xl p-10 border-2 border-purple-400 shadow-2xl">
+              <div className="absolute inset-0 opacity-5">
+                <div className="absolute inset-0" style={{
+                  backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+                  backgroundSize: '32px 32px'
+                }}></div>
+              </div>
+              <div className="relative">
+                <div className="mb-2">
+                  <span className="text-6xl font-serif font-bold bg-gradient-to-br from-purple-300 via-purple-400 to-purple-500 bg-clip-text text-transparent">
+                    {fields}
+                  </span>
+                </div>
+                <div className="w-24 h-1 bg-gradient-to-r from-transparent via-purple-400 to-transparent mx-auto mb-3"></div>
+                <div className="text-lg text-white font-semibold mb-1">
+                  Scientific Fields
+                </div>
+                <div className="text-sm text-blue-200 mt-2">
+                  Disciplines Honored
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Countdown Section - ENHANCED */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-4">
+              Next Award Ceremony
+            </h2>
             <p className="text-lg text-slate-600">
               February 15th · In commemoration of Galileo Galilei's birth
             </p>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-blue-950 to-blue-900 text-white rounded-2xl p-8 shadow-2xl border-2 border-blue-800">
-              <div className="text-5xl md:text-6xl font-bold font-mono mb-2 text-amber-400">
-                {countdown.days.toString().padStart(2, '0')}
+            {[
+              { value: countdown.days, label: 'Days' },
+              { value: countdown.hours, label: 'Hours' },
+              { value: countdown.minutes, label: 'Minutes' },
+              { value: countdown.seconds, label: 'Seconds' }
+            ].map((item, index) => (
+              <div key={index} className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 rounded-2xl p-8 shadow-2xl border-2 border-amber-400 hover:scale-105 transition-transform">
+                <div className="absolute inset-0 opacity-5">
+                  <div className="absolute inset-0" style={{
+                    backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+                    backgroundSize: '32px 32px'
+                  }}></div>
+                </div>
+                <div className="relative">
+                  <div className="text-5xl md:text-6xl font-bold font-mono mb-2 text-amber-400">
+                    {item.value.toString().padStart(2, '0')}
+                  </div>
+                  <div className="text-sm uppercase tracking-widest text-blue-200 font-semibold">{item.label}</div>
+                </div>
               </div>
-              <div className="text-sm uppercase tracking-widest text-blue-200 font-semibold">Days</div>
-            </div>
-            <div className="bg-gradient-to-br from-blue-950 to-blue-900 text-white rounded-2xl p-8 shadow-2xl border-2 border-blue-800">
-              <div className="text-5xl md:text-6xl font-bold font-mono mb-2 text-amber-400">
-                {countdown.hours.toString().padStart(2, '0')}
-              </div>
-              <div className="text-sm uppercase tracking-widest text-blue-200 font-semibold">Hours</div>
-            </div>
-            <div className="bg-gradient-to-br from-blue-950 to-blue-900 text-white rounded-2xl p-8 shadow-2xl border-2 border-blue-800">
-              <div className="text-5xl md:text-6xl font-bold font-mono mb-2 text-amber-400">
-                {countdown.minutes.toString().padStart(2, '0')}
-              </div>
-              <div className="text-sm uppercase tracking-widest text-blue-200 font-semibold">Minutes</div>
-            </div>
-            <div className="bg-gradient-to-br from-blue-950 to-blue-900 text-white rounded-2xl p-8 shadow-2xl border-2 border-blue-800">
-              <div className="text-5xl md:text-6xl font-bold font-mono mb-2 text-amber-400">
-                {countdown.seconds.toString().padStart(2, '0')}
-              </div>
-              <div className="text-sm uppercase tracking-widest text-blue-200 font-semibold">Seconds</div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Timeline Introduction */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-6">
-              A Single Tradition of Excellence
-            </h2>
-            <p className="text-xl text-slate-700 leading-relaxed max-w-4xl mx-auto">
-              From the Prix Poncelet's establishment in 1868 to the Leonardo Da Vinci Medal today, 
-              this timeline represents an unbroken legacy of recognizing mathematical excellence 
-              applied to engineering across nearly two centuries.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Laureates List */}
+      {/* Timeline Introduction - ENHANCED */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <div className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 rounded-2xl p-14 border-2 border-amber-400 shadow-2xl">
+            <div className="absolute inset-0 opacity-5">
+              <div className="absolute inset-0" style={{
+                backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+                backgroundSize: '32px 32px'
+              }}></div>
+            </div>
+            <div className="relative text-center">
+              <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+                A Single Tradition of Excellence
+              </h2>
+              <div className="w-32 h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto mb-8"></div>
+              <p className="text-xl text-blue-100 leading-relaxed max-w-4xl mx-auto">
+                From the Prix Poncelet's establishment in 1868 to the Leonardo Da Vinci Medal today, 
+                this timeline represents an unbroken legacy of recognizing mathematical excellence 
+                applied to engineering across nearly two centuries.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Laureates List - ENHANCED */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-4">
@@ -209,41 +329,85 @@ export default function LaureatesPage() {
             </p>
           </div>
           
-          <div className="space-y-3">
-            {laureates.map((laureate) => (
+          <div className="space-y-4">
+            {laureates.map((laureate) => {
+              const isFuture = laureate.year === 2026;
+              
+              return (
               <div 
                 key={laureate.year}
-                className="bg-white border-2 border-slate-200 rounded-xl overflow-hidden hover:border-amber-400 hover:shadow-xl transition-all duration-200"
+                className={`bg-white border-2 rounded-2xl overflow-hidden transition-all duration-300 ${
+                  isFuture 
+                    ? 'border-amber-400 shadow-2xl ring-4 ring-amber-400/20' 
+                    : 'border-slate-200 hover:border-amber-400 hover:shadow-2xl'
+                }`}
               >
                 <button
                   onClick={() => setExpandedYear(expandedYear === laureate.year ? null : laureate.year)}
-                  className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-slate-50 transition-colors"
+                  className={`w-full px-8 py-6 flex items-center justify-between text-left transition-colors ${
+                    isFuture ? 'bg-gradient-to-r from-amber-50 to-white' : 'hover:bg-slate-50'
+                  }`}
                 >
                   <div className="flex items-center space-x-8 flex-1">
-                    <div className="bg-gradient-to-br from-amber-500 to-amber-700 text-white rounded-xl px-6 py-3 shadow-lg">
-                      <span className="text-2xl font-bold font-serif">
-                        {laureate.year}
-                      </span>
-                    </div>
+                    {/* Year Badge - SPECIAL DESIGN FOR 2026 */}
+                    {isFuture ? (
+                      <div className="relative">
+                        <div className="absolute inset-0 bg-gradient-to-br from-amber-400 to-amber-600 rounded-xl blur-lg opacity-60 animate-pulse"></div>
+                        <div className="relative bg-gradient-to-br from-amber-400 via-amber-500 to-amber-600 text-white rounded-xl px-6 py-4 shadow-2xl border-2 border-amber-300">
+                          <span className="text-2xl font-bold font-serif">
+                            {laureate.year}
+                          </span>
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="relative">
+                        <div className="absolute inset-0 bg-gradient-to-br from-amber-400 to-amber-600 rounded-xl blur opacity-40"></div>
+                        <div className="relative bg-gradient-to-br from-amber-500 to-amber-700 text-white rounded-xl px-6 py-4 shadow-lg">
+                          <span className="text-2xl font-bold font-serif">
+                            {laureate.year}
+                          </span>
+                        </div>
+                      </div>
+                    )}
+                    
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold text-slate-900 mb-2">
-                        {laureate.name}
-                      </h3>
+                      <div className="flex items-center gap-3 mb-2">
+                        <h3 className={`text-xl md:text-2xl font-bold ${
+                          isFuture ? 'text-amber-900' : 'text-slate-900'
+                        }`}>
+                          {laureate.name}
+                        </h3>
+                        {isFuture && (
+                          <span className="bg-gradient-to-r from-amber-500 to-amber-600 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider animate-pulse">
+                            Coming Soon
+                          </span>
+                        )}
+                      </div>
                       <div className="flex flex-wrap gap-3 text-sm">
-                        <span className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full font-semibold">{laureate.nationality}</span>
-                        <span className="text-slate-400">·</span>
-                        <span className="text-slate-600 italic font-medium">{laureate.field}</span>
+                        <span className={`px-4 py-1.5 rounded-full font-semibold ${
+                          isFuture 
+                            ? 'bg-amber-100 text-amber-900 border border-amber-300' 
+                            : 'bg-blue-100 text-blue-900'
+                        }`}>
+                          {laureate.nationality}
+                        </span>
+                        <span className="text-slate-400 hidden md:block">·</span>
+                        <span className={`italic font-medium ${
+                          isFuture ? 'text-amber-700' : 'text-slate-600'
+                        }`}>{laureate.field}</span>
                       </div>
                     </div>
                   </div>
+                  
+                  {/* Arrow Icon */}
                   <svg
-                    className={`w-6 h-6 text-slate-400 transition-transform duration-200 flex-shrink-0 ${
+                    className={`w-7 h-7 transition-transform duration-300 flex-shrink-0 ${
                       expandedYear === laureate.year ? 'rotate-180' : ''
-                    }`}
+                    } ${isFuture ? 'text-amber-600' : 'text-amber-600'}`}
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
+                    strokeWidth="2.5"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
@@ -251,15 +415,25 @@ export default function LaureatesPage() {
                   </svg>
                 </button>
                 
+                {/* Expanded Content */}
                 {expandedYear === laureate.year && (
-                  <div className="px-8 pb-6 bg-gradient-to-br from-slate-50 to-white border-t-2 border-slate-200">
-                    <p className="text-slate-700 leading-relaxed text-lg pt-4">
-                      {laureate.description}
-                    </p>
+                  <div className={`px-8 pb-8 border-t-2 ${
+                    isFuture 
+                      ? 'bg-gradient-to-br from-amber-50 to-white border-amber-200' 
+                      : 'bg-gradient-to-br from-slate-50 to-white border-slate-200'
+                  }`}>
+                    <div className="pt-6">
+                      <div className={`w-16 h-1 bg-gradient-to-r mb-4 ${
+                        isFuture ? 'from-amber-400 to-transparent' : 'from-amber-400 to-transparent'
+                      }`}></div>
+                      <p className="text-slate-700 leading-relaxed text-lg">
+                        {laureate.description}
+                      </p>
+                    </div>
                   </div>
                 )}
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </section>
