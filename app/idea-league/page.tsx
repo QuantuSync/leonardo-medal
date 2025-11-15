@@ -8,6 +8,7 @@ export default function IdeaLeaguePage() {
       country: "Netherlands",
       founded: 1842,
       url: "https://www.tudelft.nl",
+      email: "tudelft@leonardodavincimedal.eu",
       description: "TU Delft is the oldest and largest Dutch public technical university, known for its pioneering work in engineering, design, and applied sciences.",
       color: "from-blue-500 to-blue-700"
     },
@@ -17,6 +18,7 @@ export default function IdeaLeaguePage() {
       country: "Switzerland",
       founded: 1855,
       url: "https://ethz.ch",
+      email: "eth@leonardodavincimedal.eu",
       description: "ETH Zurich is one of the world's leading universities in science and technology, renowned for its cutting-edge research and excellence in engineering and natural sciences.",
       color: "from-indigo-500 to-indigo-700"
     },
@@ -26,6 +28,7 @@ export default function IdeaLeaguePage() {
       country: "Germany",
       founded: 1870,
       url: "https://www.rwth-aachen.de",
+      email: "rwth@leonardodavincimedal.eu",
       description: "RWTH Aachen is one of Germany's leading technical universities, with particular strengths in engineering, natural sciences, and interdisciplinary research.",
       color: "from-cyan-500 to-cyan-700"
     },
@@ -35,6 +38,7 @@ export default function IdeaLeaguePage() {
       country: "Sweden",
       founded: 1829,
       url: "https://www.chalmers.se",
+      email: "chalmers@leonardodavincimedal.eu",
       description: "Chalmers is a Swedish university located in Gothenburg, focusing on engineering and natural sciences, with strong emphasis on sustainability and innovation.",
       color: "from-sky-500 to-sky-700"
     },
@@ -44,6 +48,7 @@ export default function IdeaLeaguePage() {
       country: "Italy",
       founded: 1863,
       url: "https://www.polimi.it",
+      email: "polimi@leonardodavincimedal.eu",
       description: "Politecnico di Milano is Italy's largest technical university, excelling in engineering, architecture, and industrial design with strong ties to industry.",
       color: "from-blue-600 to-blue-800"
     }
@@ -238,6 +243,26 @@ export default function IdeaLeaguePage() {
                     <p className="text-slate-700 leading-relaxed text-lg">
                       {university.description}
                     </p>
+                    
+                    {/* Contact Email */}
+                    <div className="mt-6 pt-6 border-t border-slate-200">
+                      <div className="flex items-center space-x-3">
+                        <div className="bg-gradient-to-br from-amber-500 to-amber-600 rounded-lg p-2 shadow-md">
+                          <svg className="w-5 h-5 text-white" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                          </svg>
+                        </div>
+                        <div>
+                          <p className="text-xs text-slate-500 uppercase tracking-wide font-semibold mb-1">Contact for Medal Inquiries</p>
+                          <a 
+                            href={`mailto:${university.email}`}
+                            className="text-blue-600 hover:text-amber-600 font-medium transition-colors"
+                          >
+                            {university.email}
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
