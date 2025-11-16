@@ -284,8 +284,8 @@ export default function LaureatesPage() {
                     backgroundSize: '32px 32px'
                   }}></div>
                 </div>
-                <div className="relative">
-                  <div className="text-5xl md:text-6xl font-bold font-mono mb-2 text-amber-400">
+                <div className="relative flex flex-col items-center justify-center">
+                  <div className="text-5xl md:text-6xl font-bold font-mono text-amber-400 mb-2">
                     {item.value.toString().padStart(2, '0')}
                   </div>
                   <div className="text-sm uppercase tracking-widest text-blue-200 font-semibold">{item.label}</div>
@@ -342,14 +342,14 @@ export default function LaureatesPage() {
                 key={laureate.year}
                 className={`bg-white border-2 rounded-2xl overflow-hidden transition-all duration-300 ${
                   isFuture 
-                    ? 'border-amber-400 shadow-2xl ring-4 ring-amber-400/20' 
+                    ? 'border-amber-400 shadow-2xl' 
                     : 'border-slate-200 hover:border-amber-400 hover:shadow-2xl'
                 }`}
               >
                 <button
                   onClick={() => setExpandedYear(expandedYear === laureate.year ? null : laureate.year)}
                   className={`w-full px-8 py-6 flex items-center justify-between text-left transition-colors ${
-                    isFuture ? 'bg-gradient-to-r from-amber-50 to-white' : 'hover:bg-slate-50'
+                    isFuture ? 'hover:bg-slate-50' : 'hover:bg-slate-50'
                   }`}
                 >
                   <div className="flex items-center space-x-8 flex-1">
@@ -423,7 +423,7 @@ export default function LaureatesPage() {
                 {expandedYear === laureate.year && (
                   <div className={`px-8 pb-8 border-t-2 ${
                     isFuture 
-                      ? 'bg-gradient-to-br from-amber-50 to-white border-amber-200' 
+                      ? 'bg-gradient-to-br from-slate-50 to-white border-amber-300' 
                       : 'bg-gradient-to-br from-slate-50 to-white border-slate-200'
                   }`}>
                     <div className="pt-6">

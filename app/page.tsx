@@ -1,3 +1,5 @@
+'use client';
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
@@ -119,6 +121,124 @@ export default function Home() {
               <p className="text-slate-600 leading-relaxed">
                 Work that bridges multiple domains and advances technical knowledge
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Historical Connection - Da Vinci & Poncelet */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-4">
+              A Bridge Across Centuries
+            </h2>
+            <p className="text-lg text-slate-600">
+              From Renaissance genius to modern mathematical rigor
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Image Column */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative">
+                <img
+                  src="/DavinciPoncelet.png"
+                  alt="Leonardo Da Vinci and Jean-Victor Poncelet"
+                  className="w-full max-w-lg object-contain rounded-xl shadow-2xl"
+                />
+              </div>
+            </div>
+
+            {/* Scrolling Testimonial Column */}
+            <div className="relative overflow-hidden bg-white rounded-2xl p-10 shadow-xl border-2 border-slate-200">
+              <div className="relative">
+                <div className="w-24 h-1 bg-gradient-to-r from-transparent via-slate-300 to-transparent mx-auto mb-6"></div>
+                
+                {/* Auto-scrolling content */}
+                <div className="h-[460px] overflow-hidden relative">
+                  <div className="absolute inset-0 animate-scroll-slow">
+                    <div className="text-slate-700 space-y-6 text-lg leading-relaxed px-2">
+                      <p className="text-blue-900 font-bold text-xl mb-4">
+                        Two Minds, One Vision
+                      </p>
+                      
+                      <p>
+                        Leonardo da Vinci (1452-1519) and Jean-Victor Poncelet (1788-1867) lived centuries apart, 
+                        yet they shared a profound conviction: that mathematical reasoning and engineering practice 
+                        are inseparable facets of human innovation.
+                      </p>
+
+                      <p>
+                        Da Vinci, the quintessential Renaissance polymath, approached engineering through the lens 
+                        of geometric principles. His notebooks reveal a mind that saw mathematical patterns in 
+                        nature and translated them into mechanical designs—from flying machines to hydraulic systems. 
+                        For Leonardo, engineering was applied geometry, and geometry was the language of creation.
+                      </p>
+
+                      <p>
+                        Three centuries later, Poncelet would formalize this intuition into a rigorous mathematical 
+                        framework. His pioneering work in projective geometry provided engineers with powerful tools 
+                        to solve problems that had resisted purely empirical approaches. Poncelet demonstrated that 
+                        abstract mathematical concepts could unlock concrete engineering solutions.
+                      </p>
+
+                      <p className="text-blue-900 font-bold text-xl mt-8 mb-4">
+                        The Common Thread
+                      </p>
+
+                      <p>
+                        Both men understood that true innovation emerges at the intersection of theory and practice. 
+                        Da Vinci's genius lay not just in his artistic vision, but in his ability to ground fantastical 
+                        ideas in geometric reality. Poncelet's contribution was to show that mathematical abstraction, 
+                        far from being divorced from practical concerns, could be engineering's most powerful ally.
+                      </p>
+
+                      <p>
+                        The Prix Poncelet, established in 1868—one year after Poncelet's death—explicitly recognized 
+                        this synthesis. It honored those who, like its namesake, advanced engineering through mathematical 
+                        innovation. The prize rejected the false dichotomy between pure mathematics and applied engineering, 
+                        celebrating instead their productive union.
+                      </p>
+
+                      <p className="text-blue-900 font-bold text-xl mt-8 mb-4">
+                        A Legacy Renewed
+                      </p>
+
+                      <p>
+                        The Leonardo Da Vinci Medal continues this tradition with deliberate purpose. By invoking both 
+                        names—Leonardo's Renaissance vision and Poncelet's mathematical rigor—the award affirms that 
+                        the challenges of the 21st century demand the same integration of creativity and precision that 
+                        characterized both men's work.
+                      </p>
+
+                      <p>
+                        Today's complex systems—from climate modeling to autonomous infrastructure—require engineers 
+                        who can move fluidly between abstract mathematical frameworks and concrete physical realities. 
+                        The Medal recognizes those rare individuals who, like Da Vinci sketching the laws of fluid 
+                        dynamics or Poncelet revolutionizing geometric analysis, refuse to separate the elegance of 
+                        mathematical thought from the urgency of engineering problems.
+                      </p>
+
+                      <p>
+                        In honoring the Prix Poncelet's legacy while embracing Leonardo's name, the award declares 
+                        that the spirit of mathematical engineering—rigorous, creative, and indispensable—remains as 
+                        vital today as it was in Renaissance Florence or 19th-century France.
+                      </p>
+
+                      <p className="text-slate-600 italic text-center mt-8 pt-6 border-t border-slate-200">
+                        "The noblest pleasure is the joy of understanding." — Leonardo da Vinci
+                      </p>
+                    </div>
+                  </div>
+                  
+                  {/* Gradient overlays for smooth fade */}
+                  <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-white to-transparent pointer-events-none"></div>
+                  <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+                </div>
+
+                <div className="w-24 h-1 bg-gradient-to-r from-transparent via-slate-300 to-transparent mx-auto mt-6"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -256,6 +376,25 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <style jsx>{`
+        @keyframes scroll-slow {
+          0% {
+            transform: translateY(0);
+          }
+          100% {
+            transform: translateY(-50%);
+          }
+        }
+        
+        .animate-scroll-slow {
+          animation: scroll-slow 30s linear infinite;
+        }
+        
+        .animate-scroll-slow:hover {
+          animation-play-state: paused;
+        }
+      `}</style>
     </main>
   );
 }
