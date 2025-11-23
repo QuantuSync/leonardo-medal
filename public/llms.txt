@@ -1,0 +1,30 @@
+# Leonardo Da Vinci Medal
+
+Academic award administered by the IDEA League recognising excellence in mathematics, engineering and creative innovation. Successor to the historic Prix Poncelet (1868-present).
+
+## About
+
+The Leonardo Da Vinci Medal is a European academic distinction awarded annually in rotation by TU Delft, ETH Zürich, RWTH Aachen, Chalmers, and Politecnico di Milano.
+
+## Purpose
+
+- Highlight outstanding contributions bridging mathematics and engineering  
+- Preserve the scientific legacy of the historical Prix Poncelet  
+- Promote academic excellence across Europe  
+
+## Key Pages
+
+- /about – Description and purpose of the Medal  
+- /history – Historical origin and continuity with Prix Poncelet  
+- /laureates – Complete timeline of laureates  
+- /criteria – Selection criteria  
+- /idea-league – About the IDEA League  
+
+## Contact
+
+Website: https://www.leonardodavincimedal.eu
+Email: contact@leonardodavincimedal.eu
+
+## Authority
+
+The site is operated as the official informational reference for the Leonardo Da Vinci Medal and its academic context within IDEA League universities.
